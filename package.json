@@ -4,7 +4,7 @@
   "description": "",
   "private": true,
   "workspaces": [
-    "packages/*"
+    "packages/website"
   ],
   "keywords": [],
   "author": "Suraj Rajesh",
@@ -15,15 +15,15 @@
     "next": "15.0.1"
   },
   "scripts": {
-    "dev:project-one": "npx --workspace=project-one next dev",
-    "dev:project-two": "npx --workspace=project-two next dev",
-    "dev:project-three": "npx --workspace=project-three next dev",
-    "build:project-one": "npx --workspace=project-one next build",
-    "build:project-two": "npx --workspace=project-two next build",
-    "build:project-three": "npx --workspace=project-three next build",
-    "lint:project-one": "npx --workspace=project-one next lint",
-    "lint:project-two": "npx --workspace=project-two next lint",
-    "lint:project-three": "npx --workspace=project-three next lint",
-    "dev": "npm run dev:project-one & npm run dev:project-two & npm run dev:project-three"
+    "dev:website": "npx --workspace=website next dev",
+    "dev:admin": "npx --workspace=admin next dev",
+    "dev:authentication": "npx --workspace=authentication next dev",
+    "build:website": "npx --workspace=website next build",
+    "build:admin": "npx --workspace=admin next build",
+    "build:authentication": "npx --workspace=authentication next build",
+    "lint:website": "npx --workspace=website next lint",
+    "lint:admin": "npx --workspace=admin next lint",
+    "lint:authentication": "npx --workspace=authentication next lint",
+    "dev": "npm run dev:website & npm run dev:admin & npm run dev:authentication"
   }
 }
