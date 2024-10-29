@@ -1,3 +1,9 @@
 [submodule "packages/website"]
 	path = packages/website
 	url = https://github.com/suraj-rajeshh/home-mono-repo.git
+[submodule "packages/admin"]
+	path = packages/admin
+	url = https://github.com/suraj-rajeshh/home-mono-repo.git
+[submodule "packages/authentication"]
+	path = packages/authentication
+	url = https://github.com/suraj-rajeshh/home-mono-repo.git
