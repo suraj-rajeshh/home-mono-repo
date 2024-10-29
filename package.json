@@ -1,0 +1,29 @@
+{
+  "name": "chandrika",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "keywords": [],
+  "author": "Suraj Rajesh",
+  "license": "ISC",
+  "devDependencies": {
+    "react": "19.0.0-rc-69d4b800-20241021",
+    "react-dom": "19.0.0-rc-69d4b800-20241021",
+    "next": "15.0.1"
+  },
+  "scripts": {
+    "dev:project-one": "npx --workspace=project-one next dev",
+    "dev:project-two": "npx --workspace=project-two next dev",
+    "dev:project-three": "npx --workspace=project-three next dev",
+    "build:project-one": "npx --workspace=project-one next build",
+    "build:project-two": "npx --workspace=project-two next build",
+    "build:project-three": "npx --workspace=project-three next build",
+    "lint:project-one": "npx --workspace=project-one next lint",
+    "lint:project-two": "npx --workspace=project-two next lint",
+    "lint:project-three": "npx --workspace=project-three next lint",
+    "dev": "npm run dev:project-one & npm run dev:project-two & npm run dev:project-three"
+  }
+}
